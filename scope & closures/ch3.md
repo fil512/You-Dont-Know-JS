@@ -215,7 +215,7 @@ setTimeout( function(){
 
 This is called an "anonymous function expression", because `function()...` has no name identifier on it. Function expressions can be anonymous, but function declarations cannot omit the name -- that would be illegal JS grammar.
 
-Anonymous function expressions are quick and easy to type, and many libraries and tools tend to encourage this idiomatic style of code. However, they have several draw-backs to consider:
+Anonymous function expressions are quick and easy to type, and many libraries and tools tend to encourage this idiomatic style of code. However, they have several drawbacks to consider:
 
 1. Anonymous functions have no useful name to display in stack traces, which can make debugging more difficult.
 
@@ -223,7 +223,7 @@ Anonymous function expressions are quick and easy to type, and many libraries an
 
 3. Anonymous functions omit a name that is often helpful in providing more readable/understandable code. A descriptive name helps self-document the code in question.
 
-**Inline function expressions** are powerful and useful -- the question of anonymous vs. named doesn't detract from that. Providing a name for your function expression quite effectively addresses all these draw-backs, but has no tangible downsides. The best practice is to always name your function expressions:
+**Inline function expressions** are powerful and useful -- the question of anonymous vs. named doesn't detract from that. Providing a name for your function expression quite effectively addresses all these drawbacks, but has no tangible downsides. The best practice is to always name your function expressions:
 
 ```js
 setTimeout( function timeoutHandler(){ // <-- Look, I have a name!
